@@ -1,38 +1,72 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+#nav {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25)!important;
+}
+#theme-switch {
+  font-size: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25)!important;
+}
+.rounded-pill {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25)!important;
+}
+
+.dark-theme {
+  background-color: #212529;
+  color: #fff;
+}
+.light-theme {
+  background-color: #fff;
+  color: #000;
+}
+.card {
+  border: none !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25)!important;
+}
+.card > div > p {
+  margin-top: 120px !important;
   text-align: center;
+  font-weight: 500;
+  font-size: 30px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#current-card {
+  background-image: url('./images/today-forecast.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.current-title {
+  font-size: 50px !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.current-title > p {
+  font-size: 15px;
+  font-weight: 300;
+  padding-left: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.chart-container {
+  margin: 0 auto;
+  height: 350px;
+  width: 350px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chart-title {
+  font-size: 25px !important;
+  padding-left: 5px;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 10px;
+}
+.spinner {
+  height: 200px !important;
+  width: 200px !important;
+  margin: auto auto;
+}
+.day-week {
+  font-size: 25px !important;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 10px;
 }
